@@ -1,0 +1,42 @@
+class Employee:
+
+    #initialize the attributes
+    def __init__(self, name, HR_ID, CITY, NAME):
+        self.__name = name
+        self.__id = HR_ID
+        self.__department = CITY
+        self.__title = NAME
+
+    #set the attributes
+    def set_name(self, name):
+        self.__name = name
+
+    def set_id(self, id):
+        self.__id = id
+
+    def set_department(self, department):
+        self.__department = department
+
+    def set_title(self, title):
+        self.__title = title
+
+    #return the attributes
+    def get_name(self):
+        return self.__name
+
+    def get_id(self):
+        return self.__id
+
+    def get_department(self):
+        return self.__department
+
+    def get_title(self):
+        return self.__title
+
+    #return the objects state as a string
+
+    def __str__(self):
+        return 'Name: ' + self.__name + \
+               '\nID number: ' + self.__id + \
+               '\nDepartment: ' + self.__department + \
+               '\nTitle: ' + self.__title
